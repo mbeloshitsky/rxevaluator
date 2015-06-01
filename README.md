@@ -3,7 +3,7 @@ Reactive Evaluator
 
 Simple python class for reactive evaluations (Mathematica like).
 
-```pycon
+```python
 >>> import rxevaluator
 >>> rxeval=rxevaluator.ReactiveEvaluator()
 >>> rxeval.compile('a=1')
