@@ -1,7 +1,7 @@
 Reactive Evaluator
 ==================
 
-Simple python class for reactive evaluations (Mathematica like).
+Simple python class for reactive evaluations (Mathematica-like).
 
 ```python
 >>> import rxevaluator
@@ -21,9 +21,10 @@ Evaluating: b=1
 >>> rxeval.evaluate(2)
 Evaluating: c=b+a
 {2: {'c': 2}}
->>> rxeval.compile('a=12')
-3
+>>> rxeval.compile('a=12',0)
+0
 >>> rxeval.evaluate(0)
-Evaluating: a=1
-{0: {'a': 1}}
+Evaluating: a=12
+Evaluating: c=b+a
+{0: {'a': 12}, 2: {'c': 13}}
 ```
